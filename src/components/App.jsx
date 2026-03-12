@@ -1,11 +1,12 @@
-import { Section } from "./Section/Section";
+
+import { Cards } from "./Card/Cards";
+console.log(Cards);
+
 export const App = () => {
-  return (
-    <div>
-      
-          <Section title={'Peace'}/>qqqqwqqq<Section/>
-          <Section />
-       {/* {console.log(<Section/>)}    */}
-    </div>
+  return(
+    <>
+         <Cards/>
+    </>
   );
+ 
 };
