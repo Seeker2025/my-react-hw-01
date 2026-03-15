@@ -1,38 +1,46 @@
-import { ProfileCard, Description, Image, Name, Location } from "./Profile.styled";
+import { 
+                                    ProfileCard,
+                                    Description,
+                                    Image,
+                                    Name,
+                                    Location,
+                                    Quantity,
+                                    Stats,
+                                    Tag,
+                                    Label,
+ 
+        } from './Profile.styled';
 
 
-export const Profile =({man, username, location})=>{
+export const Profile =({username, tag, location, avatar, stats})=>{
     return (
-        <>
-            <ProfileCard>
-  <Description>
-    <Image
-      src= {man}
-      alt= {username}
-     
-    />
-    <Name>{username}</Name>
-    <p class="tag">@pmarica</p>
-    <Location>{location}</Location>
-  </Description>
-
-  <ul class="stats">
-    <li>
-      <span class="label">Followers</span>
-      <span class="quantity">1000</span>
-    </li>
-    <li>
-      <span class="label">Views</span>
-      <span class="quantity">2000</span>
-    </li>
-    <li>
-      <span class="label">Likes</span>
-      <span class="quantity">3000</span>
-    </li>
-  </ul>
-</ProfileCard>
-
         
-        </>
+          <ProfileCard>
+
+                <Description>
+                      <Image src= {avatar} alt= {username} />
+                      <Name>{username}</Name>
+                      <Tag>@{tag}</Tag>
+                      <Location>{location}</Location>
+                </Description>
+
+                <Stats>
+                  <li>
+                    <Label>Folowers</Label>
+                    <Quantity>{stats.followers}</Quantity>
+                  </li>
+                  <li>
+                    <Label>Views</Label>
+                    <Quantity>{stats.views}</Quantity>
+                  </li>
+                  <li>
+                    <Label>Likes</Label>
+                    <Quantity>{stats.likes}</Quantity>
+                  </li>
+                </Stats>
+
+          </ProfileCard>
+
+       
     )
-}
+};
