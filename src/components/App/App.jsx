@@ -3,8 +3,10 @@ import React from 'react';
 import { Profile } from '../Profile/Profile';
 import { Statistics } from '../Statistics/Statistics';
 import user from '../../common/user.json';
+import stats from '../../common/data.json';
 import man from '../../img/man.png';
 console.log(user);
+
 
 export const App = () => {
   return(
@@ -20,7 +22,8 @@ export const App = () => {
                               
                         />
                         <Statistics
-                        
+                              title={false}
+                              stats={stats}
                         
                         />
 
