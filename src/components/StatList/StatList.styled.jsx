@@ -2,13 +2,11 @@ import styled from '@emotion/styled';
 
 export const Raw = styled.ul`
     padding: 0;
-    background-color: #fe1d1d;
     margin: 0;
     display: flex;
     flex-direction: row;
-    width: 320px;
+    width: 360px;
 `;
-
 
 export const Item = styled.li`
     padding: 15px 0;

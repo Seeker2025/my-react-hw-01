@@ -4,10 +4,10 @@ import { List } from 'components/StatList/StatList';
 export const Statistics =({title, stats})=>{
 
     return(
+        
                 <StatisticCard>
 
-                        <Title>{title || "Upload stats"}</Title>
-
+                        {title && <Title>{title}</Title>}
                         <List stats={stats}/>
                     
                 </StatisticCard>

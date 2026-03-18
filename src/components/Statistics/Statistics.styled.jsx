@@ -1,26 +1,31 @@
 import styled from '@emotion/styled';
 
 export const Title = styled.h2`
-    color: #8e8e8e;
-    background-color: #eaeaea;
+    color: #ff0000;
+    background-color: #c5c4c4;
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
     padding: 25px 0;
-    margin: 25px 0 0;
+    margin: 0;
 `;
 
 
 export const StatisticCard = styled.section`
     background-color: #7cdef2;
-    height: 25px;
-    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    width: 360px;
+    
 `;
 
 export const StatList = styled.ul`
     background-color: #a3f27c;
     display: flex;
     flex-direction: row;
+     border: 4px dashed silver;
     
 `;
 

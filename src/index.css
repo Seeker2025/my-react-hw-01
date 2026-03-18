@@ -20,3 +20,18 @@ ul, li{
 
 }
 
+table{
+  border:0px;
+}
+
+thead{
+  border:0px;
+  
+}
+
+tr, td{
+   border:0px;
+   padding: 13px;
+   width: 100px;
+}
+

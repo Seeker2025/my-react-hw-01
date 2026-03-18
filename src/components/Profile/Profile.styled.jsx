@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const ProfileCard = styled.div`
     background-color: red;
     border-radius: 5px;
-    width: 320px;
+    width: 360px;
 `;
 
 export const Description = styled.div`
@@ -43,7 +43,7 @@ export const Stats = styled.ul`
     background-color: #8c1f1f;
     display: flex;
     padding: 15px;
-    padding-left: 25px;
+    padding-left: 40px;
     flex-direction: raw;
     border-radius: 5px;
 
