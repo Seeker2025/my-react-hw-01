@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const Table = styled.table`
     
-    width: 750px;
+    width: 650px;
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
@@ -16,7 +16,7 @@ export const Thead = styled.thead`
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
-    height: 47px;
+    height: 40px;
 `;
 
 
@@ -25,8 +25,12 @@ export const Line = styled.tr`
     font-size: 1.1em;
     font-weight: 400;
     background-color: ${props=>(props.numeric % 2 === 0 ? 'silver' : 'white')};
-
+   
     & td:first-child{
         text-transform: lowercase;
+        text-align: left;
+        padding-left: 70px;
+        width: 10px;
+        
     }
 `;

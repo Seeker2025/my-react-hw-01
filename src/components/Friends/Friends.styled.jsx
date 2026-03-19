@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 
 export const FriendList = styled.ul`
-    background-color: #848484;
     width: 211px;
     height: auto;
     display: flex;

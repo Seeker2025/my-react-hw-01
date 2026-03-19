@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { getColor } from '../../common/color';
 
 export const Raw = styled.ul`
     padding: 0;
@@ -17,7 +18,7 @@ export const Item = styled.li`
     flex-direction: column;
     align-items: center;
     background-color:  ${function getRandomHexColor() {
-    return `#${Math.floor(Math.random() * 0x333333).toString(16).padStart(6, "0")}`;
+    return `#${getColor()}`;
   }};
 `;
 
