@@ -10,7 +10,7 @@ export const FriendList = styled.ul`
 `;
 
 export const FriendListItem = styled.li`
-    background-color: #ffffff;
+    background-color: #878787;
     width: 350px;
     height: 50px;
     padding: 3px;
@@ -29,7 +29,7 @@ export const Image = styled.img`
 `;
 
 export const Name = styled.p`
-    color: gray;
+    color: #ffffff;
     font-size: 1.3em;
     font-weight: 500;
     

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { Profile    }   from '../Profile/Profile';
 import { Statistics }   from '../Statistics/Statistics';
@@ -39,3 +40,8 @@ export const App = () => {
   );
  
 };
+
+Statistics.propTypes = {
+  title: PropTypes.string.isRequired,
+
+}
